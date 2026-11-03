@@ -77,3 +77,20 @@
   right: 1vw;
 }
 
+@media screen and (max-width: 600px ) {
+  .gallery-modal img {
+    max-width: 75vw;
+    max-height: 75vh;
+  }
+
+  .gallery-prev {
+  left: 0px;
+  font-size: 1.5rem;
+}
+
+.gallery-next {
+  right: 0px;
+  font-size: 1.5rem;
+}
+}
+
