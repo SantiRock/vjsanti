@@ -1,0 +1,44 @@
+a {
+    text-decoration: none;
+}
+
+.about {
+    margin: 17px 50px;
+    min-width: 200px;
+    max-width: 500px;
+    text-align: justify;
+
+}
+
+.contact {
+    text-align: center;
+}
+
+.gallery {
+    width: 80%;
+    max-width: 971px;
+    max-height: 80%;
+}
+
+
+.menu_c {
+  display: flex;
+  align-items: center ; 
+  margin-left: 13px;
+  margin-bottom: 17px;
+
+}
+
+.menu {
+  margin-right: 13px;
+  cursor: pointer;
+  color: white;
+}
+
+.menu:hover {
+    color: rgb(252, 196, 252)
+}
+
+.p1 {
+    font-size: 13px;
+}

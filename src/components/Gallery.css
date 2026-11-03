@@ -1,0 +1,79 @@
+.gallery-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+
+.gallery-thumb {
+  padding: 0;
+  border: 0;
+  max-width: 24%;
+  min-width: none;
+  background: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.gallery-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: saturate(0.05);
+  transition: filter 0.5s;
+}
+
+.gallery-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-thumb:hover img {
+  filter: saturate(0.7);
+}
+
+/* ocupa hasta el 80% de la pantalla, sin pasar del tamaño real de la imagen */
+.gallery-modal img {
+  max-width: 80vw;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+.gallery-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: 0;
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.gallery-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  background: none;
+  border: 0;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.gallery-prev {
+  left: 1vw;
+}
+
+.gallery-next {
+  right: 1vw;
+}
+
